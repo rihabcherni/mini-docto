@@ -81,7 +81,6 @@ class _ProfilePageState extends State<ProfilePage> {
           key: _formKey,
           child: Column(
             children: [
-              /// Champ Nom
               TextFormField(
                 controller: nameController,
                 decoration: const InputDecoration(
@@ -96,7 +95,6 @@ class _ProfilePageState extends State<ProfilePage> {
               ),
               const SizedBox(height: 16),
 
-              /// Champ Email
               TextFormField(
                 controller: emailController,
                 decoration: const InputDecoration(
@@ -109,7 +107,6 @@ class _ProfilePageState extends State<ProfilePage> {
                   if (value == null || value.trim().isEmpty) {
                     return 'Champ requis';
                   }
-                  // Vérif simple email avec regex
                   final emailRegex =
                       RegExp(r'^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$');
                   if (!emailRegex.hasMatch(value.trim())) {
@@ -119,8 +116,6 @@ class _ProfilePageState extends State<ProfilePage> {
                 },
               ),
               const SizedBox(height: 20),
-
-              /// Bouton
               SizedBox(
                 width: double.infinity,
                 child: ElevatedButton.icon(

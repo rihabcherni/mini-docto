@@ -5,7 +5,6 @@ exports.bookAppointment = async (req, res) => {
   const { professionalId, date, slot } = req.body;
 
   try {
-    // Vérifier que le créneau n'est pas déjà réservé
     const existing = await Appointment.findOne({
       professional: professionalId,
       date,

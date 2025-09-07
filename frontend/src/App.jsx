@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
-import { useEffect, useState } from "react"; // ajouter useState
+import { useEffect, useState } from "react"; 
 import { AuthProvider } from "./contexts/AuthContext";
 import Navbar from "./components/Navbar";
 import Login from "./pages/Login";
@@ -8,7 +8,7 @@ import DashboardPro from "./pages/DashboardPro";
 import Profile from "./pages/Profile";
 import ProtectedRoute from "./components/ProtectedRoute";
 import PublicRoute from "./components/PublicRoute";
-import { initGA, logPageView, logEvent, logSessionDuration } from "./analytics"; // ajouter logEvent et logSessionDuration
+import { initGA, logPageView, logEvent, logSessionDuration } from "./analytics";
 
 initGA();
 

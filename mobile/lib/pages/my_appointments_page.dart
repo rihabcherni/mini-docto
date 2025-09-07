@@ -97,8 +97,6 @@ class _MyAppointmentsPageState extends State<MyAppointmentsPage> {
         lastDate: DateTime.now().add(const Duration(days: 365)),
       );
       if (newDate == null) return;
-
-      // Exemple : choix du créneau via un TextField ou Dropdown
       String? newSlot = await showDialog<String>(
         context: context,
         builder: (_) => SimpleDialog(

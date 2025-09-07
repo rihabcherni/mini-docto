@@ -1,4 +1,3 @@
-// pages/home_page.dart
 import 'package:flutter/material.dart';
 import '../services/professional_service.dart';
 import '../models/professional.dart';

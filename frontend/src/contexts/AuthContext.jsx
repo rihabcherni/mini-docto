@@ -4,12 +4,12 @@ export const AuthContext = createContext();
 
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
-  const [loading, setLoading] = useState(true); // <-- nouvel état
+  const [loading, setLoading] = useState(true); 
 
   useEffect(() => {
     const storedUser = JSON.parse(localStorage.getItem("user"));
     if (storedUser) setUser(storedUser);
-    setLoading(false); // <-- on a fini de charger
+    setLoading(false); 
   }, []);
 
   const loginUser = (userData) => {

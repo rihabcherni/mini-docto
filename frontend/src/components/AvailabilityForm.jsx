@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { addAvailability } from "../api/api";
 import Swal from "sweetalert2";
-import { logEvent } from "../analytics"; // <-- import GA event
+import { logEvent } from "../analytics"; 
 
 export default function AvailabilityForm({ onAdded }) {
   const [date, setDate] = useState("");

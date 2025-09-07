@@ -13,14 +13,12 @@ connectDB();
 const app = express();
 app.use(express.json());
 
-// Middleware CORS global
 app.use(cors({
   origin: true, 
   methods: ["GET","POST","PUT","DELETE","OPTIONS"],
   credentials: true
 }));
 
-// Routes
 app.get("/", (req, res) => res.status(200).json({message:"Mini docto +"}));
 app.use("/api/auth", authRoutes);
 app.use("/api/professionals", professionalRoutes);

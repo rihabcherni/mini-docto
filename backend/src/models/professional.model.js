@@ -5,7 +5,7 @@ const professionalSchema = new mongoose.Schema({
   score: { type: Number, default: 50, min: 0, max: 100 },
   availabilities: [{
     date: { type: Date, required: true },
-    slots: [{ type: String }] //  ["09:00", "10:00"]
+    slots: [{ type: String }] 
   }]
 }, { timestamps: true });
 
